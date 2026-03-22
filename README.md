@@ -1,6 +1,9 @@
-<div align="center">
+<p align="center">
+  <img src="pixscape_logo.png" alt="Pixscape logo" width="80">
+</p>
 
-# Pixscape
+<h1 align="center">Pixscape</h1>
+<br>
 
 ### Lightweight 2D game creation tools focused on clarity, speed, and iteration.
 
