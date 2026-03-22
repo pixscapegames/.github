@@ -32,7 +32,7 @@ The organization currently focuses on:
 
 ## Core projects
 
-### [`pixscape-studio`](https://github.com/pixscapegames/pixscape-studio)
+### [`pixscape-studio`](https://github.com/pixscapegames/pixscape-studio-releases)
 The visual editor for building 2D scenes and game content.
 
 ### [`pixscape-runtime`](https://github.com/pixscapegames/pixscape-runtime)
