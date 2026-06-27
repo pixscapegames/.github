@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Send general feedback
+    url: "mailto:info@pixscape.games?subject=Pixscape%20feedback"
+    about: For general feedback, questions, partnerships, or non-technical requests.
+
+  - name: Read the documentation
+    url: "https://pixscape.games/docs/"
+    about: Learn how to install, configure, and use Pixscape.
+
+  - name: Report a security vulnerability
+    url: "mailto:info@pixscape.games?subject=Security%20report%3A%20Pixscape%20Studio%20Free"
+    about: Please report security vulnerabilities privately instead of opening a public issue.

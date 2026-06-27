@@ -1,0 +1,139 @@
+name: Bug report
+description: Report a reproducible bug in Pixscape Studio Free.
+title: "[Bug]: "
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a reproducible bug in Pixscape Studio Free.
+
+        Please use this form only for technical bugs that can be reproduced.
+
+        For general feedback, questions, partnerships, or non-technical requests, please email:
+        info@pixscape.games
+
+        For security vulnerabilities, do not open a public issue. Please report them privately by email.
+
+  - type: input
+    id: studio-version
+    attributes:
+      label: Pixscape Studio Free version
+      description: Which version of Pixscape Studio Free are you using?
+      placeholder: "Example: 0.2.0"
+    validations:
+      required: true
+
+  - type: input
+    id: runtime-version
+    attributes:
+      label: Pixscape Runtime version
+      description: If relevant, which Pixscape Runtime version is used by the project?
+      placeholder: "Example: 0.1.7"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      description: Where did the issue happen?
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: java-version
+    attributes:
+      label: Java version
+      description: Which Java version are you using?
+      placeholder: "Example: Java 21"
+    validations:
+      required: false
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug summary
+      description: Describe the bug clearly and briefly.
+      placeholder: "What is broken?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Give precise steps so we can reproduce the problem.
+      placeholder: |
+        1. Open Pixscape Studio Free
+        2. Create or load a project
+        3. Click ...
+        4. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: "Describe the expected result."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What actually happened?
+      placeholder: "Describe the actual result."
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-context
+    attributes:
+      label: Project context
+      description: Add useful context about the project, assets, export target, editor workflow, or runtime setup.
+      placeholder: |
+        Example:
+        - New project or existing project?
+        - Desktop, Android, or HTML5 export?
+        - Tiled map, sprite, animation, physics, prefab, shader, particles?
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or error output
+      description: Paste relevant logs, stack traces, or console output if available.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or screen recording
+      description: Add screenshots or a short recording if it helps explain the issue.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues before opening this bug report.
+          required: true
+        - label: This is a reproducible technical bug, not general feedback.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true
